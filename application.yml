@@ -10,3 +10,11 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
     dialect: org.hibernate.dialect.MySQL8Dialect
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9192/oauth/check_token
+    client:
+      client-id: mobile
+      client-secret: pin
